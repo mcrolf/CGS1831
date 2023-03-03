@@ -1,0 +1,181 @@
+/*   ch9 case study: path of liught yoga*/
+/*   Michael Napoli 2275778 */
+
+* { box-sizing: border-box; }
+body { 
+	background-color: #3F2860;
+    color: #40407A;
+	font-family: Verdana, Arial, sans-serif;
+	margin: 0;
+}
+#wrapper { background-color: #F5F5F5;
+    	   padding: 2em; 
+}
+header { background-color: #40407A;
+        background-image: url(sunrise.jpg);
+		background-size: 100% 100%; 
+		color: #FFF;
+		font-size: 90%;
+		margin-top: 50px;
+		min-height: 200px;
+}
+header a { text-decoration: none; }
+header a:link       { color: #FFF; }
+header a:visited { color: #FFF; }
+header a:hover    { color: #EDF5F5; }
+.home, .content { height: 20vh;
+        padding-left: 10%;
+		padding-top: 2em; }
+nav { background-color: #FFF;
+	 position: fixed;
+	 left: 0;
+	 top: 0;
+	 margin: 0;
+	 padding: 0.5em 0 1em 1em;
+	 text-align: right;
+	 width: 100%;
+	 z-index: 9999;
+}
+nav a { display: block;
+	  text-decoration: none; 
+}
+nav a:link { color: #3F2860; }
+nav a:visited { color: #497777; }
+nav a:hover { color: #A26100;  }
+nav ul { display: flex; 
+       flex-flow: row wrap;
+	   font-size: 1.2em;
+	   list-style-type: none; 
+	   margin: 0;
+}
+nav li { display: inline;
+      padding: 0 1em;
+	  width: 40%; }
+#mathero { background-image: url(yogamat.jpg);
+		   background-repeat: no-repeat;
+		   background-size: cover;
+		   height: 300px;
+		   display: none; }
+#loungehero { background-image: url(yogalounge.jpg);
+		   background-repeat: no-repeat;
+		   background-size: cover;
+		   height: 300px;
+		   display: none; }
+#mobile { display: inline; }
+#desktop { display: none; }
+.studio { font-style: italic; }
+section { padding-left: .5em;
+        padding-right: .5em; }
+footer {   font-size: .60em;
+		 font-style: italic;
+		 text-align: center; 
+}
+table {
+	margin: auto;
+	text-align: center;
+	width: 60%;
+	border: 1px;
+	border-color: #3F2860;
+	border-style: solid;
+	border-collapse: collapse;
+	margin-bottom: 2em;
+}
+.center {
+	margin: auto;
+	text-align: center;
+	margin-bottom: 1em;
+}
+td, th {
+	padding: 5px;
+	border: 1px;
+	border-style: solid;
+	border-color: #3F2860;
+}
+tr:nth-of-type(even){
+	background-color: #DBE8E9;
+}
+caption {
+	margin: 1em;
+	font-weight: bold;
+	font-size: 120%;
+}
+.altrow {
+	background-color: #DBE8E9;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	column-count: 1;
+	padding-left: 1em;
+	width: 80%;
+	margin-bottom: .5em;
+}
+input {
+	margin-bottom: 0.5em;
+}
+textarea {
+	margin-bottom: 0.5em;
+}
+.column {
+	display: list;
+	width: 100%;
+	column-gap: 10px;
+}
+label { display: inline-block;
+}
+@media (min-width: 600px) { 
+	.column{float: left;	
+			width: 50%;
+			column-gap: 10px;}
+	.row::after{content: "";
+				display: table;
+				clear: both;}
+	form { width: 80%;
+			grid-template-columns: 2;
+			display: grid;
+			padding-left: 1em;
+			column-count: 2;
+			column-width: 12em;}
+	submit {grid-column: 2;
+			width: 9em;}
+	label { display: inline-block;
+			text-align: right;}
+	nav ul { flex-flow: row nowrap;
+	          justify-content: flex-end; }
+	nav li { width: 7em; }
+	section { padding-left: 2em;
+	          padding-right: 2em; }
+	#mathero, #loungehero { display: block; 
+	                        padding-bottom: 1em; }
+	#flow { display: flex;
+	        flex-direction: row; }
+	#mobile { display: none; }
+	#desktop { display: inline; }
+}
+@media (min-width: 1024px) { 
+	.column{float: left;	
+			width: 50%;
+			column-gap: 10px;}
+	.row::after{content: "";
+				display: table;
+				clear: both;}	
+	form { width: 80%;
+			display: grid;
+			grid-template-columns: 2;
+			padding-left: 1em;
+			column-count: 2;
+			column-width: 12em;}
+	submit {grid-column: auto;
+			width: 9em;}
+	label { display: inline-block;
+			text-align: right;}	
+	header { font-size: 120%; }
+	.home { height: 50vh;
+	        padding-left: 8em;
+			 padding-top: 5em;}
+	.content { height: 30vh;
+			   padding-left: 8em;
+			   padding-top: 1em; }
+	#wrapper { margin: auto;
+	           width: 80%; }
+}

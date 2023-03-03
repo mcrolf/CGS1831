@@ -1,0 +1,88 @@
+<!--Furry Baby: Contact-->
+<!--By: Michael Napoli-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="furrybaby.css">
+        <title>Furry Baby: Contact </title>
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <nav>    
+                <a href="index.html"; class="button"> Home </a>
+                <a href="products.html"; class="button"> Products </a>
+                <a href="gallery.html"; class="button"> Gallery </a>
+                <a href="aboutus.html"; class="button"> About Us </a>
+            </nav>
+
+            <header>
+                <a href="index.html"><img src="FurryBaby3.png" class="logo"></a>
+            </header>
+
+        </div>
+
+        <main>
+
+            <h1 style="text-align:center;"> Contact Furry Baby</h1>
+	        <h2 style="margin: 2em; text-align:center;">
+                Fill out the form below to contact Furry Baby. All information is required.
+            </h2>
+        
+            <form action="contact.php" method="post" class="grid-container">
+                <div class="row">
+                    <label class="column" for="myName"> Name: </label>
+                    <input class="column" type="text" name="myName" id="myName" required>
+                </div>
+
+                <div class="row">
+                    <label class="column" for="myEmail"> E-Mail: </label>
+                    <input class="column" type="text" name="myEmail" id="myEmail" required>
+                </div>
+
+                <div class="row">
+                    <label class="column" for="myRefer"> How did you hear about us?: </label>
+                    <input class="column" type="text" name="myRefer" id="myRefer" list="referral" required>
+                    <datalist id="referral">
+                        <option value="Google">
+                        <option value="Pintrest">
+                        <option value="Facebook">
+                        <option value="Instagram">
+                    </datalist>
+                </div>
+            
+                <div class="row">
+                    <label class="column" for="mycomments"> Comments: </label>
+                    <textarea class="column" rows="2" cols="20" name="mycomments" id="mycomments" optional>
+                    </textarea>
+                </div> 
+            
+                <div class="row">
+                    <input class="column" type="submit" id="mySubmit" value="Send Now">
+                </div>
+
+            </form>
+        
+        </main>
+
+        <footer id="wrapper" class="buttonwrap">
+            <a href="contact.html" class="button2"> Contact Us </a>
+            <a class="button2"> (813)333-4444 </a>
+            <a class="button2"> furrybabby@shop.com </a>
+            <br>
+            <br>
+            <p> &copy;FurryBaby 2022 </p>
+        </footer>
+
+    </body>
+
+
+
+</html>

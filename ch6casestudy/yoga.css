@@ -1,0 +1,94 @@
+/*   ch4 case study: path of liught yoga*/
+/*   Michael Napoli 2275778 */
+
+* {box-sizing: border-box;}
+
+header, nav, main, footer {
+    display: block; 
+}
+body {
+    background-color: #ffffff; color: #3f2860; 
+    font-family: Verdana, Arial, sans-serif;
+}
+header {
+    background-color: #9BC1C2;
+    background-image: url(lilyheader.jpg);
+    background-repeat:no-repeat;
+    background-position: right;
+    height: 150px;
+}
+header:link{color: #40407a;}
+header:visited{color: #40407a}
+header:hover{color: #ffffff}
+h1 { 
+    padding-top:50px;
+    padding-left:2em;
+}
+nav {
+    float: left;
+    font-weight: bold;
+    padding:1em;
+}
+nav a {
+    display: block;
+    text-align: center;
+    border: 3px #CCCCCC outset;
+    text-decoration: none;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+nav a:link {color: #3f2860}
+nav a:visited {color: #497777}
+nav a:hover {color: #a26100; border: 3px inset #333333}
+nav ul{
+    list-style-type: none; margin: 0; padding: 0;
+}
+.studio { 
+    font-style: italic;
+}
+footer { 
+    background-color: #9BC1C2;
+    font-size: .60em;
+    text-align: center;
+    font-style: italic;
+    padding: 1em;
+}
+#wrapper { 
+    float: left 160px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F5F5F5;
+    min-width: 1200px;
+    max-width: 1420px;
+}
+main{
+    display: block;
+    padding-left:2em;
+    padding-right:2em;
+}
+#hero{
+    text-align: center;
+}
+image{
+    padding-left:1em;
+    padding-right:1em;
+}
+.floatleft{
+    float: left;
+    margin-right: 4em;
+}
+.clear{
+    clear: both;
+}
+.onehalf{
+    width: 40%;
+    float: left;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.onethird{
+    float: left;
+    width: 30%;
+    padding-left: 2em;
+    padding-right: 2em;
+}

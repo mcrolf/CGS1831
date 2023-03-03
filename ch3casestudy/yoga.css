@@ -1,0 +1,30 @@
+/*   ch3 case study: Path Of Light Yoga*/
+/*   Michael Napoli 2275778 */
+body {
+    background-color: #F5F5F5; color: #40407A;
+    font-family: Verdana, Arial, sans-serif;
+}
+header {
+    background-color: #80CBC4;
+    text-align: center;
+}
+h1 { 
+    line-height: 200%;
+}
+nav { 
+    text-align: center;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+}
+.studio { font-style: italic;}
+footer { background-color: #80CBC4;
+    font-size: .60em;
+    text-align: center;
+    font-style: italic;
+}
+#wrapper { width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+}
